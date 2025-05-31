@@ -1,0 +1,66 @@
+[
+  {
+    "id": 1,
+    "name": "100% White Cotton Hosiery Smooth Single Jersey Non-stitched Wiping Rags",
+    "description": "High-quality non-stitched wiping rags made from smooth single jersey fabric",
+    "specifications": {
+      "material": "100% White Cotton Hosiery",
+      "type": "Smooth Single Jersey",
+      "stitching": "Non-stitched"
+    }
+  },
+  {
+    "id": 2,
+    "name": "100% White Cotton Hosiery Smooth Single Jersey Stitched Wiping Rags (4-6 pcs)",
+    "description": "Premium stitched wiping rags with 4-6 pieces stitched together",
+    "specifications": {
+      "material": "100% White Cotton Hosiery",
+      "type": "Smooth Single Jersey",
+      "stitching": "Stitched (4-6 pcs)"
+    }
+  },
+  {
+    "id": 3,
+    "name": "100% White Cotton Hosiery Smooth Single Jersey Stitched Wiping Rags (12 pcs)",
+    "description": "Premium stitched wiping rags with 12 pieces stitched together",
+    "specifications": {
+      "material": "100% White Cotton Hosiery",
+      "type": "Smooth Single Jersey",
+      "stitching": "Stitched (12 pcs)"
+    }
+  },
+  {
+    "id": 4,
+    "name": "100% Washed A-grade White Cotton Hosiery Smooth Single Jersey Non-stitched Wiping Rags",
+    "description": "A-grade washed non-stitched wiping rags made from premium smooth single jersey fabric",
+    "specifications": {
+      "material": "100% White Cotton Hosiery",
+      "type": "Smooth Single Jersey",
+      "grade": "A-grade",
+      "stitching": "Non-stitched",
+      "washing": "Washed"
+    }
+  },
+  {
+    "id": 5,
+    "name": "100% Washed B-grade White Cotton Hosiery Smooth Single Jersey Non-stitched Wiping Rags",
+    "description": "B-grade washed non-stitched wiping rags made from smooth single jersey fabric",
+    "specifications": {
+      "material": "100% White Cotton Hosiery",
+      "type": "Smooth Single Jersey",
+      "grade": "B-grade",
+      "stitching": "Non-stitched",
+      "washing": "Washed"
+    }
+  },
+  {
+    "id": 6,
+    "name": "100% White Cotton Hosiery Un-smooth Non-stitched Wiping Rags",
+    "description": "Non-stitched wiping rags made from polo, sweat, and other un-smooth materials",
+    "specifications": {
+      "material": "100% White Cotton Hosiery",
+      "type": "Un-smooth (Polo, Sweat, etc.)",
+      "stitching": "Non-stitched"
+    }
+  }
+]
