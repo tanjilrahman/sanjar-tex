@@ -6,10 +6,12 @@ import LadiesWoven from "./pages/products/LadiesWoven";
 import Sweater from "./pages/products/Sweater";
 import WipingRags from "./pages/products/WipingRags";
 import Contact from "./pages/Contact";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <div className="flex flex-col min-h-screen">
         <Header />
         <main className="flex-grow">

@@ -28,11 +28,11 @@ const ProductGallery = ({ products, type }: ProductGalleryProps) => {
 
   const getImagePath = (product: Product, highRes: boolean = false) => {
     if (type === "ladies-woven") {
-      return `/src/assets/images/ladies-woven/${
+      return `/images/ladies-woven/${
         highRes ? product.high_res_image : product.low_res_image
       }`;
     }
-    return `/src/assets/images/sweater/${product.image}`;
+    return `/images/sweater/${product.image}`;
   };
 
   const container = {

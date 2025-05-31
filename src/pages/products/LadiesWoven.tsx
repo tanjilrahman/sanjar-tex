@@ -25,7 +25,7 @@ const LadiesWoven = () => {
       {/* Hero Section */}
       <section className="relative bg-[#8B1F24] py-24">
         <div className="absolute inset-0">
-          <div className="h-full w-full bg-[url('/src/assets/images/ladies-woven/image001.png')] bg-cover bg-center opacity-20"></div>
+          <div className="h-full w-full bg-[url('/images/ladies-woven/image001.png')] bg-cover bg-center opacity-20"></div>
         </div>
         <div className="container mx-auto px-4 relative z-10">
           <h1 className="text-5xl font-bold text-center text-white mb-6">
@@ -73,7 +73,7 @@ const LadiesWoven = () => {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div>
                   <img
-                    src={`/src/assets/images/ladies-woven/${selectedProduct.high_res_image}`}
+                    src={`/images/ladies-woven/${selectedProduct.high_res_image}`}
                     alt={selectedProduct.Item}
                     className="w-full rounded-lg shadow-lg"
                   />

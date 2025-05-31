@@ -10,10 +10,10 @@ const Home = () => {
   const featuredSweaters = sweaterData.slice(0, 4);
 
   const heroImages = [
-    "/src/assets/images/sweater/image001.jpeg",
-    "/src/assets/images/ladies-woven/image001.png",
-    "/src/assets/images/sweater/image008.jpeg",
-    "/src/assets/images/ladies-woven/image006.png",
+    "/images/sweater/image001.jpeg",
+    "/images/ladies-woven/image001.png",
+    "/images/sweater/image008.jpeg",
+    "/images/ladies-woven/image006.png",
   ];
 
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -68,7 +68,7 @@ const Home = () => {
         <div className="container mx-auto px-4 h-full flex items-center justify-center relative z-10">
           <div className="text-center max-w-4xl">
             <img
-              src="/src/assets/logo.png"
+              src="/logo.png"
               alt="Sanjar Tex & Expo"
               className="h-44 mx-auto mb-8"
             />
@@ -358,7 +358,7 @@ const Home = () => {
             <div className="relative">
               <div className="bg-white p-8 rounded-2xl shadow-lg transform hover:scale-105 transition-transform duration-300">
                 <img
-                  src="/src/assets/images/wiping-rags/image.png"
+                  src="/images/wiping-rags/image.png"
                   alt="Wiping Rags"
                   className="w-full rounded-lg"
                 />
@@ -385,7 +385,7 @@ const Home = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             <div className="group relative overflow-hidden rounded-2xl shadow-xl">
               <img
-                src="/src/assets/images/ladies-woven/image001.png"
+                src="/images/ladies-woven/image001.png"
                 alt="Ladies Woven"
                 className="w-full h-[500px] object-cover transition-transform duration-500 group-hover:scale-110"
               />
@@ -404,7 +404,7 @@ const Home = () => {
             </div>
             <div className="group relative overflow-hidden rounded-2xl shadow-xl">
               <img
-                src="/src/assets/images/sweater/image001.jpeg"
+                src="/images/sweater/image001.jpeg"
                 alt="Sweater Collection"
                 className="w-full h-[500px] object-cover transition-transform duration-500 group-hover:scale-110"
               />
@@ -428,7 +428,7 @@ const Home = () => {
       {/* CTA Section */}
       <section className="py-24 bg-[#8B1F24] relative overflow-hidden">
         <div className="absolute inset-0">
-          <div className="h-full w-full bg-[url('/src/assets/images/sweater/image002.jpeg')] bg-cover bg-center opacity-10"></div>
+          <div className="h-full w-full bg-[url('/images/sweater/image002.jpeg')] bg-cover bg-center opacity-10"></div>
         </div>
         <div className="container mx-auto px-4 text-center relative z-10">
           <h2 className="text-4xl font-bold mb-8 text-white">

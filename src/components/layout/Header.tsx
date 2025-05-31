@@ -28,11 +28,7 @@ const Header = () => {
                   : "bg-transparent p-2 rounded-lg"
               }`}
             >
-              <img
-                src="/src/assets/logo.png"
-                alt="Sanjar Tex & Expo"
-                className="h-12"
-              />
+              <img src="/logo.png" alt="Sanjar Tex & Expo" className="h-12" />
             </div>
           </Link>
           <div className="hidden md:flex items-center space-x-8">

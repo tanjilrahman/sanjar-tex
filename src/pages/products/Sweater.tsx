@@ -20,7 +20,7 @@ const Sweater = () => {
       {/* Hero Section */}
       <section className="relative bg-[#8B1F24] py-24">
         <div className="absolute inset-0">
-          <div className="h-full w-full bg-[url('/src/assets/images/sweater/image001.jpeg')] bg-cover bg-center opacity-20"></div>
+          <div className="h-full w-full bg-[url('/images/sweater/image001.jpeg')] bg-cover bg-center opacity-20"></div>
         </div>
         <div className="container mx-auto px-4 relative z-10">
           <h1 className="text-5xl font-bold text-center text-white mb-6">

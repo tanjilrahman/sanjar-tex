@@ -7,7 +7,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
           <div className="col-span-1 md:col-span-2">
             <img
-              src="/src/assets/logo.png"
+              src="/logo.png"
               alt="Sanjar Tex & Expo"
               className="h-16 mb-6"
             />

@@ -6,7 +6,7 @@ const WipingRags = () => {
       {/* Hero Section */}
       <section className="relative bg-[#8B1F24] py-24">
         <div className="absolute inset-0">
-          <div className="h-full w-full bg-[url('/src/assets/images/wiping-rags/hero.jpg')] bg-cover bg-center opacity-20"></div>
+          <div className="h-full w-full bg-[url('/images/wiping-rags/image.png')] bg-cover bg-center opacity-15"></div>
         </div>
         <div className="container mx-auto px-4 relative z-10">
           <h1 className="text-5xl font-bold text-center text-white mb-6">
@@ -37,7 +37,7 @@ const WipingRags = () => {
             <div>
               <div className="bg-white p-8 rounded-2xl shadow-lg">
                 <img
-                  src="/src/assets/images/wiping-rags/image.png"
+                  src="/images/wiping-rags/image.png"
                   alt="Wiping Rags"
                   className="w-full rounded-lg"
                 />
