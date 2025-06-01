@@ -9,10 +9,10 @@ const WipingRags = () => {
           <div className="h-full w-full bg-[url('/images/wiping-rags/image.png')] bg-cover bg-center opacity-15"></div>
         </div>
         <div className="container mx-auto px-4 relative z-10">
-          <h1 className="text-5xl font-bold text-center text-white mb-6">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center text-white mb-4 sm:mb-6">
             Wiping Rags Collection
           </h1>
-          <p className="text-xl text-center text-gray-200 max-w-3xl mx-auto">
+          <p className="text-lg sm:text-xl text-center text-gray-200 max-w-3xl mx-auto">
             Premium quality cotton wiping rags for industrial and commercial use
           </p>
         </div>
@@ -30,12 +30,12 @@ const WipingRags = () => {
       </section>
 
       {/* Product Information Section */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-12 sm:py-16 bg-gray-50">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12">
             {/* Product Image */}
             <div>
-              <div className="bg-white p-8 rounded-2xl shadow-lg">
+              <div className="bg-white p-4 sm:p-8 rounded-2xl shadow-lg">
                 <img
                   src="/images/wiping-rags/image.png"
                   alt="Wiping Rags"
@@ -45,32 +45,32 @@ const WipingRags = () => {
             </div>
 
             {/* Product Details */}
-            <div className="space-y-8">
+            <div className="space-y-6 sm:space-y-8">
               {/* Size and Packing Information */}
-              <div className="bg-white p-8 rounded-2xl shadow-lg">
-                <h2 className="text-2xl font-bold mb-6">
+              <div className="bg-white p-4 sm:p-8 rounded-2xl shadow-lg">
+                <h2 className="text-xl sm:text-2xl font-bold mb-4 sm:mb-6">
                   Size & Packing Options
                 </h2>
-                <div className="space-y-6">
+                <div className="space-y-4 sm:space-y-6">
                   <div>
-                    <h3 className="text-lg font-semibold text-[#8B1F24] mb-2">
+                    <h3 className="text-base sm:text-lg font-semibold text-[#8B1F24] mb-2">
                       Large Size (30cm - 50cm)
                     </h3>
                     <ul className="list-disc list-inside text-gray-600 space-y-2">
-                      <li>
+                      <li className="text-sm sm:text-base">
                         5kgs in a poly bag and 40kgs in an exportable bale
                       </li>
-                      <li>
+                      <li className="text-sm sm:text-base">
                         1kgs in a poly bag and 20kgs in an exportable bale
                       </li>
                     </ul>
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold text-[#8B1F24] mb-2">
+                    <h3 className="text-base sm:text-lg font-semibold text-[#8B1F24] mb-2">
                       Small Size (20cm - 28cm)
                     </h3>
                     <ul className="list-disc list-inside text-gray-600">
-                      <li>
+                      <li className="text-sm sm:text-base">
                         5kgs in a poly bag and 40kgs in an exportable bale
                       </li>
                     </ul>
@@ -79,24 +79,26 @@ const WipingRags = () => {
               </div>
 
               {/* Available Products */}
-              <div className="bg-white p-8 rounded-2xl shadow-lg">
-                <h2 className="text-2xl font-bold mb-6">Available Products</h2>
+              <div className="bg-white p-4 sm:p-8 rounded-2xl shadow-lg">
+                <h2 className="text-xl sm:text-2xl font-bold mb-4 sm:mb-6">
+                  Available Products
+                </h2>
                 <div className="space-y-4">
                   {wipingRagsData.map((product) => (
                     <div
                       key={product.id}
-                      className="p-4 border border-gray-200 rounded-lg hover:border-[#8B1F24] transition-colors duration-300"
+                      className="p-3 sm:p-4 border border-gray-200 rounded-lg hover:border-[#8B1F24] transition-colors duration-300"
                     >
-                      <h3 className="font-semibold text-gray-900">
+                      <h3 className="font-semibold text-gray-900 text-base sm:text-lg">
                         {product.name}
                       </h3>
-                      <p className="text-gray-600 mt-2">
+                      <p className="text-gray-600 mt-2 text-sm sm:text-base">
                         {product.description}
                       </p>
-                      <div className="mt-3 grid grid-cols-2 gap-2">
+                      <div className="mt-3 grid grid-cols-1 sm:grid-cols-2 gap-2">
                         {Object.entries(product.specifications).map(
                           ([key, value]) => (
-                            <div key={key} className="text-sm">
+                            <div key={key} className="text-xs sm:text-sm">
                               <span className="text-gray-500 capitalize">
                                 {key.replace("_", " ")}:
                               </span>{" "}

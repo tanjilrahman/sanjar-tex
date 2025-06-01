@@ -50,10 +50,10 @@ const Contact = () => {
           <div className="h-full w-full bg-[url('/images/sweater/image003.jpeg')] bg-cover bg-center opacity-20"></div>
         </div>
         <div className="container mx-auto px-4 relative z-10">
-          <h1 className="text-5xl font-bold text-center text-white mb-6">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center text-white mb-4 sm:mb-6">
             Get in Touch
           </h1>
-          <p className="text-xl text-center text-gray-200 max-w-2xl mx-auto">
+          <p className="text-lg sm:text-xl text-center text-gray-200 max-w-2xl mx-auto">
             Have questions about our products or services? We're here to help
             you create the perfect collection.
           </p>
@@ -72,18 +72,18 @@ const Contact = () => {
       </section>
 
       {/* Contact Section */}
-      <section className="py-16">
+      <section className="py-12 sm:py-16">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-12">
             {/* Contact Form */}
-            <div className="bg-white p-8 rounded-2xl shadow-lg">
-              <h2 className="text-3xl font-bold mb-8 text-gray-900">
+            <div className="bg-white p-4 sm:p-8 rounded-2xl shadow-lg">
+              <h2 className="text-2xl sm:text-3xl font-bold mb-6 sm:mb-8 text-gray-900">
                 Send us a Message
               </h2>
               {showSuccess && (
-                <div className="mb-6 p-4 bg-green-50 border border-green-200 text-green-700 rounded-lg flex items-center">
+                <div className="mb-4 sm:mb-6 p-3 sm:p-4 bg-green-50 border border-green-200 text-green-700 rounded-lg flex items-center text-sm sm:text-base">
                   <svg
-                    className="w-5 h-5 mr-2"
+                    className="w-5 h-5 mr-2 flex-shrink-0"
                     fill="currentColor"
                     viewBox="0 0 20 20"
                   >
@@ -97,9 +97,9 @@ const Contact = () => {
                 </div>
               )}
               {showError && (
-                <div className="mb-6 p-4 bg-red-50 border border-red-200 text-red-700 rounded-lg flex items-center">
+                <div className="mb-4 sm:mb-6 p-3 sm:p-4 bg-red-50 border border-red-200 text-red-700 rounded-lg flex items-center text-sm sm:text-base">
                   <svg
-                    className="w-5 h-5 mr-2"
+                    className="w-5 h-5 mr-2 flex-shrink-0"
                     fill="currentColor"
                     viewBox="0 0 20 20"
                   >
@@ -112,12 +112,16 @@ const Contact = () => {
                   Something went wrong! Please try again later.
                 </div>
               )}
-              <form ref={form} onSubmit={sendEmail} className="space-y-6">
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+              <form
+                ref={form}
+                onSubmit={sendEmail}
+                className="space-y-4 sm:space-y-6"
+              >
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
                   <div>
                     <label
                       htmlFor="name"
-                      className="block text-sm font-medium text-gray-700 mb-2"
+                      className="block text-sm font-medium text-gray-700 mb-1 sm:mb-2"
                     >
                       Name
                     </label>
@@ -126,14 +130,14 @@ const Contact = () => {
                       name="name"
                       id="name"
                       required
-                      className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#8B1F24] focus:border-transparent transition-all duration-300"
+                      className="w-full px-3 sm:px-4 py-2 sm:py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#8B1F24] focus:border-transparent transition-all duration-300 text-sm sm:text-base"
                       placeholder="Your Name"
                     />
                   </div>
                   <div>
                     <label
                       htmlFor="email"
-                      className="block text-sm font-medium text-gray-700 mb-2"
+                      className="block text-sm font-medium text-gray-700 mb-1 sm:mb-2"
                     >
                       Email
                     </label>
@@ -142,7 +146,7 @@ const Contact = () => {
                       name="email"
                       id="email"
                       required
-                      className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#8B1F24] focus:border-transparent transition-all duration-300"
+                      className="w-full px-3 sm:px-4 py-2 sm:py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#8B1F24] focus:border-transparent transition-all duration-300 text-sm sm:text-base"
                       placeholder="your@email.com"
                     />
                   </div>
@@ -150,7 +154,7 @@ const Contact = () => {
                 <div>
                   <label
                     htmlFor="phone"
-                    className="block text-sm font-medium text-gray-700 mb-2"
+                    className="block text-sm font-medium text-gray-700 mb-1 sm:mb-2"
                   >
                     Phone
                   </label>
@@ -158,14 +162,14 @@ const Contact = () => {
                     type="tel"
                     name="phone"
                     id="phone"
-                    className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#8B1F24] focus:border-transparent transition-all duration-300"
+                    className="w-full px-3 sm:px-4 py-2 sm:py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#8B1F24] focus:border-transparent transition-all duration-300 text-sm sm:text-base"
                     placeholder="Your Phone Number"
                   />
                 </div>
                 <div>
                   <label
                     htmlFor="subject"
-                    className="block text-sm font-medium text-gray-700 mb-2"
+                    className="block text-sm font-medium text-gray-700 mb-1 sm:mb-2"
                   >
                     Subject
                   </label>
@@ -174,14 +178,14 @@ const Contact = () => {
                     name="subject"
                     id="subject"
                     required
-                    className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#8B1F24] focus:border-transparent transition-all duration-300"
+                    className="w-full px-3 sm:px-4 py-2 sm:py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#8B1F24] focus:border-transparent transition-all duration-300 text-sm sm:text-base"
                     placeholder="How can we help?"
                   />
                 </div>
                 <div>
                   <label
                     htmlFor="message"
-                    className="block text-sm font-medium text-gray-700 mb-2"
+                    className="block text-sm font-medium text-gray-700 mb-1 sm:mb-2"
                   >
                     Message
                   </label>
@@ -190,14 +194,14 @@ const Contact = () => {
                     name="message"
                     rows={6}
                     required
-                    className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#8B1F24] focus:border-transparent transition-all duration-300"
+                    className="w-full px-3 sm:px-4 py-2 sm:py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#8B1F24] focus:border-transparent transition-all duration-300 text-sm sm:text-base"
                     placeholder="Your message..."
                   ></textarea>
                 </div>
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className={`w-full bg-[#8B1F24] text-white py-4 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 ${
+                  className={`w-full bg-[#8B1F24] text-white py-3 sm:py-4 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 text-sm sm:text-base ${
                     isSubmitting
                       ? "opacity-75 cursor-not-allowed"
                       : "hover:bg-[#721A1E]"
@@ -235,17 +239,17 @@ const Contact = () => {
             </div>
 
             {/* Contact Information */}
-            <div className="space-y-8">
-              <div className="bg-white p-8 rounded-2xl shadow-lg">
-                <h2 className="text-3xl font-bold mb-8 text-gray-900">
+            <div className="space-y-6 sm:space-y-8">
+              <div className="bg-white p-4 sm:p-8 rounded-2xl shadow-lg">
+                <h2 className="text-2xl sm:text-3xl font-bold mb-6 sm:mb-8 text-gray-900">
                   Contact Information
                 </h2>
-                <div className="space-y-6">
+                <div className="space-y-4 sm:space-y-6">
                   <div className="flex items-start">
                     <div className="flex-shrink-0">
-                      <div className="w-12 h-12 bg-[#8B1F24] bg-opacity-10 rounded-lg flex items-center justify-center">
+                      <div className="w-10 sm:w-12 h-10 sm:h-12 bg-[#8B1F24] rounded-lg flex items-center justify-center">
                         <svg
-                          className="w-6 h-6 text-[#ffffff]"
+                          className="w-5 sm:w-6 h-5 sm:h-6 text-white"
                           fill="none"
                           stroke="currentColor"
                           viewBox="0 0 24 24"
@@ -265,11 +269,11 @@ const Contact = () => {
                         </svg>
                       </div>
                     </div>
-                    <div className="ml-4">
-                      <h3 className="text-lg font-semibold text-gray-900">
+                    <div className="ml-3 sm:ml-4">
+                      <h3 className="text-base sm:text-lg font-semibold text-gray-900">
                         Chittagong Office
                       </h3>
-                      <p className="mt-1 text-gray-600">
+                      <p className="mt-1 text-sm sm:text-base text-gray-600">
                         Parabat Tower (4th Floor),
                         <br />
                         472, Sk. Mujib Road, Agrabad,
@@ -280,9 +284,9 @@ const Contact = () => {
                   </div>
                   <div className="flex items-start">
                     <div className="flex-shrink-0">
-                      <div className="w-12 h-12 bg-[#8B1F24] bg-opacity-10 rounded-lg flex items-center justify-center">
+                      <div className="w-10 sm:w-12 h-10 sm:h-12 bg-[#8B1F24] rounded-lg flex items-center justify-center">
                         <svg
-                          className="w-6 h-6 text-[#ffffff]"
+                          className="w-5 sm:w-6 h-5 sm:h-6 text-white"
                           fill="none"
                           stroke="currentColor"
                           viewBox="0 0 24 24"
@@ -296,11 +300,11 @@ const Contact = () => {
                         </svg>
                       </div>
                     </div>
-                    <div className="ml-4">
-                      <h3 className="text-lg font-semibold text-gray-900">
+                    <div className="ml-3 sm:ml-4">
+                      <h3 className="text-base sm:text-lg font-semibold text-gray-900">
                         Dhaka Office
                       </h3>
-                      <p className="mt-1 text-gray-600">
+                      <p className="mt-1 text-sm sm:text-base text-gray-600">
                         S.R.Garden (4th Floor),
                         <br />
                         52, Naya Palton,
@@ -311,9 +315,9 @@ const Contact = () => {
                   </div>
                   <div className="flex items-start">
                     <div className="flex-shrink-0">
-                      <div className="w-12 h-12 bg-[#8B1F24] bg-opacity-10 rounded-lg flex items-center justify-center">
+                      <div className="w-10 sm:w-12 h-10 sm:h-12 bg-[#8B1F24] rounded-lg flex items-center justify-center">
                         <svg
-                          className="w-6 h-6 text-[#ffffff]"
+                          className="w-5 sm:w-6 h-5 sm:h-6 text-white"
                           fill="none"
                           stroke="currentColor"
                           viewBox="0 0 24 24"
@@ -327,11 +331,11 @@ const Contact = () => {
                         </svg>
                       </div>
                     </div>
-                    <div className="ml-4">
-                      <h3 className="text-lg font-semibold text-gray-900">
+                    <div className="ml-3 sm:ml-4">
+                      <h3 className="text-base sm:text-lg font-semibold text-gray-900">
                         Contact Numbers
                       </h3>
-                      <div className="mt-1 space-y-1 text-gray-600">
+                      <div className="mt-1 space-y-1 text-sm sm:text-base text-gray-600">
                         <p>Tel: +880 2333326623</p>
                         <p>Fax: +880 2333326623</p>
                         <p>Mobile: +880 1711481212</p>
@@ -340,9 +344,9 @@ const Contact = () => {
                   </div>
                   <div className="flex items-start">
                     <div className="flex-shrink-0">
-                      <div className="w-12 h-12 bg-[#8B1F24] bg-opacity-10 rounded-lg flex items-center justify-center">
+                      <div className="w-10 sm:w-12 h-10 sm:h-12 bg-[#8B1F24] rounded-lg flex items-center justify-center">
                         <svg
-                          className="w-6 h-6 text-[#ffffff]"
+                          className="w-5 sm:w-6 h-5 sm:h-6 text-white"
                           fill="none"
                           stroke="currentColor"
                           viewBox="0 0 24 24"
@@ -356,11 +360,11 @@ const Contact = () => {
                         </svg>
                       </div>
                     </div>
-                    <div className="ml-4">
-                      <h3 className="text-lg font-semibold text-gray-900">
+                    <div className="ml-3 sm:ml-4">
+                      <h3 className="text-base sm:text-lg font-semibold text-gray-900">
                         Online
                       </h3>
-                      <div className="mt-1 space-y-1 text-gray-600">
+                      <div className="mt-1 space-y-1 text-sm sm:text-base text-gray-600">
                         <p>WeChat: monjuffi</p>
                         <p>
                           Email:{" "}
@@ -378,9 +382,9 @@ const Contact = () => {
                   </div>
                   <div className="flex items-start">
                     <div className="flex-shrink-0">
-                      <div className="w-12 h-12 bg-[#8B1F24] bg-opacity-10 rounded-lg flex items-center justify-center">
+                      <div className="w-10 sm:w-12 h-10 sm:h-12 bg-[#8B1F24] rounded-lg flex items-center justify-center">
                         <svg
-                          className="w-6 h-6 text-[#ffffff]"
+                          className="w-5 sm:w-6 h-5 sm:h-6 text-white"
                           fill="none"
                           stroke="currentColor"
                           viewBox="0 0 24 24"
@@ -394,14 +398,14 @@ const Contact = () => {
                         </svg>
                       </div>
                     </div>
-                    <div className="ml-4">
-                      <h3 className="text-lg font-semibold text-gray-900">
+                    <div className="ml-3 sm:ml-4">
+                      <h3 className="text-base sm:text-lg font-semibold text-gray-900">
                         Business Hours
                       </h3>
-                      <p className="mt-1 text-gray-600">
+                      <p className="mt-1 text-sm sm:text-base text-gray-600">
                         Monday - Friday: 9:00 AM - 6:00 PM
                       </p>
-                      <p className="text-gray-600">
+                      <p className="text-sm sm:text-base text-gray-600">
                         Saturday: 9:00 AM - 2:00 PM
                       </p>
                     </div>

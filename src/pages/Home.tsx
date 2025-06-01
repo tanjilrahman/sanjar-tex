@@ -70,13 +70,13 @@ const Home = () => {
             <img
               src="/logo.png"
               alt="Sanjar Tex & Expo"
-              className="h-44 mx-auto mb-8"
+              className="h-24 sm:h-32 md:h-44 mx-auto mb-4 sm:mb-8"
             />
-            <h1 className="text-6xl font-bold mb-6 leading-tight">
-              Your Global Textile <br />
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4 sm:mb-6 leading-tight">
+              Your Global Textile <br className="hidden sm:block" />
               Export Partner
             </h1>
-            <p className="text-xl mb-12 text-gray-200">
+            <p className="text-lg sm:text-xl mb-8 sm:mb-12 text-gray-200">
               Connecting quality Bangladesh textiles with international markets
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -111,11 +111,11 @@ const Home = () => {
       {/* Features Section */}
       <section className="py-24 bg-white">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-bold text-center mb-8 text-gray-900">
+          <h2 className="text-3xl sm:text-4xl font-bold text-center mb-6 sm:mb-8 text-gray-900">
             Why Choose <span className="text-[#8B1F24]">Sanjar Tex & Expo</span>
             ?
           </h2>
-          <p className="text-lg text-center mb-16 text-gray-600 max-w-4xl mx-auto">
+          <p className="text-base sm:text-lg text-center mb-12 sm:mb-16 text-gray-600 max-w-4xl mx-auto px-4">
             We are a{" "}
             <span className="text-[#8B1F24] font-bold">
               100% export-oriented
@@ -174,18 +174,18 @@ const Home = () => {
       {/* Featured Ladies Woven Products */}
       <section className="py-24 bg-white">
         <div className="container mx-auto px-4">
-          <div className="flex justify-between items-center mb-12">
+          <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-12">
             <div>
-              <h2 className="text-4xl font-bold text-gray-900">
+              <h2 className="text-3xl sm:text-4xl font-bold text-gray-900">
                 Featured <span className="text-[#8B1F24]">Ladies Woven</span>
               </h2>
-              <p className="mt-2 text-gray-600 text-lg">
+              <p className="mt-2 text-gray-600 text-base sm:text-lg">
                 Premium export-quality ladies woven garments
               </p>
             </div>
             <Link
               to="/products/ladies-woven"
-              className="inline-flex items-center text-[#8B1F24] font-semibold hover:text-[#721A1E] transition-colors duration-300"
+              className="inline-flex items-center text-[#8B1F24] font-semibold hover:text-[#721A1E] transition-colors duration-300 mt-4 sm:mt-0"
             >
               View All
               <svg
@@ -210,18 +210,18 @@ const Home = () => {
       {/* Featured Sweater Products */}
       <section className="py-24 bg-gray-50">
         <div className="container mx-auto px-4">
-          <div className="flex justify-between items-center mb-12">
+          <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-12">
             <div>
-              <h2 className="text-4xl font-bold text-gray-900">
+              <h2 className="text-3xl sm:text-4xl font-bold text-gray-900">
                 Featured <span className="text-[#8B1F24]">Sweaters</span>
               </h2>
-              <p className="mt-2 text-gray-600 text-lg">
+              <p className="mt-2 text-gray-600 text-base sm:text-lg">
                 High-quality sweaters for international markets
               </p>
             </div>
             <Link
               to="/products/sweater"
-              className="inline-flex items-center text-[#8B1F24] font-semibold hover:text-[#721A1E] transition-colors duration-300"
+              className="inline-flex items-center text-[#8B1F24] font-semibold hover:text-[#721A1E] transition-colors duration-300 mt-4 sm:mt-0"
             >
               View All
               <svg
@@ -248,10 +248,10 @@ const Home = () => {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-4xl font-bold text-gray-900 mb-6">
+              <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">
                 Premium <span className="text-[#8B1F24]">Wiping Rags</span>
               </h2>
-              <p className="text-lg text-gray-600 mb-8">
+              <p className="text-base sm:text-lg text-gray-600 mb-8">
                 High-quality cotton wiping rags for industrial and commercial
                 applications. Available in various sizes and specifications to
                 meet your specific requirements.
@@ -379,7 +379,7 @@ const Home = () => {
       {/* Product Categories */}
       <section className="py-24 bg-gray-50">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-bold text-center mb-16 text-gray-900">
+          <h2 className="text-3xl sm:text-4xl font-bold text-center mb-12 sm:mb-16 text-gray-900">
             Our <span className="text-[#8B1F24]">Collections</span>
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
@@ -431,10 +431,10 @@ const Home = () => {
           <div className="h-full w-full bg-[url('/images/sweater/image002.jpeg')] bg-cover bg-center opacity-10"></div>
         </div>
         <div className="container mx-auto px-4 text-center relative z-10">
-          <h2 className="text-4xl font-bold mb-8 text-white">
+          <h2 className="text-3xl sm:text-4xl font-bold mb-6 sm:mb-8 text-white">
             Ready to Source Your Next Collection?
           </h2>
-          <p className="text-xl mb-12 text-gray-200 max-w-2xl mx-auto">
+          <p className="text-lg sm:text-xl mb-8 sm:mb-12 text-gray-200 max-w-2xl mx-auto">
             Let's discuss your requirements and create a tailored sourcing
             solution for your business
           </p>

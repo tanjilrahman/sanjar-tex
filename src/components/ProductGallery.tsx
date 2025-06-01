@@ -53,7 +53,7 @@ const ProductGallery = ({ products, type }: ProductGalleryProps) => {
   return (
     <div className="relative">
       <motion.div
-        className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"
+        className="grid grid-cols-1 xs:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6"
         variants={container}
         initial="hidden"
         animate="show"
@@ -72,29 +72,30 @@ const ProductGallery = ({ products, type }: ProductGalleryProps) => {
                 src={getImagePath(product)}
                 alt={product.Item}
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                loading="lazy"
               />
             </div>
-            <div className="p-4 border-t border-gray-100">
-              <h3 className="text-lg font-semibold text-gray-900 mb-1 truncate">
+            <div className="p-3 sm:p-4 border-t border-gray-100">
+              <h3 className="text-base sm:text-lg font-semibold text-gray-900 mb-1 truncate">
                 {product.Item}
               </h3>
-              <p className="text-sm text-gray-600 mb-2">
+              <p className="text-xs sm:text-sm text-gray-600 mb-2">
                 {product.Style_No || `Style: ${product.SL_NO}`}
               </p>
               <div className="space-y-1">
-                <p className="text-sm text-gray-600 flex items-center">
-                  <span className="w-20 text-gray-500">Fabric:</span>
+                <p className="text-xs sm:text-sm text-gray-600 flex items-center">
+                  <span className="w-16 sm:w-20 text-gray-500">Fabric:</span>
                   <span className="truncate">{product.Fabrication}</span>
                 </p>
                 {product.Construction && (
-                  <p className="text-sm text-gray-600 flex items-center">
-                    <span className="w-20 text-gray-500">Build:</span>
+                  <p className="text-xs sm:text-sm text-gray-600 flex items-center">
+                    <span className="w-16 sm:w-20 text-gray-500">Build:</span>
                     <span className="truncate">{product.Construction}</span>
                   </p>
                 )}
                 {product.Size_Range && (
-                  <p className="text-sm text-gray-600 flex items-center">
-                    <span className="w-20 text-gray-500">Size:</span>
+                  <p className="text-xs sm:text-sm text-gray-600 flex items-center">
+                    <span className="w-16 sm:w-20 text-gray-500">Size:</span>
                     <span className="truncate">{product.Size_Range}</span>
                   </p>
                 )}
